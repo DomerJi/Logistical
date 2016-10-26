@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4dab88</color>
+    <color name="colorPrimaryDark">#4dab88</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorMainBottom">#3F51B5</color>
+
+    <!--登录按钮-->
+    <color name="colorLogin">#4dab88</color>
+    <color name="colorLoginDark">#319a77</color>
+    <!--订单文字-->
+    <color name="tv_unselect">#999999</color>
+    <!--线的颜色-->
+    <color name="colorLineLight">#dcdcdc</color>
+    <color name="colorLineDeep">#acacac</color>
+    <color name="white">#fff</color>
+    <color name="gray">#f7f7f9</color>
+    <color name="grayDark">#cecece</color>
+    <color name="grayDeep">#ababab</color>
+    <color name="grayDeepDark">#666</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="black_alpha">#b0000000</color>
+    <color name="black">#000000</color>
+
+    <color name="black_alpha_light">#33000000</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <!-- 快递详情 -->
+    <color name="nodeColor">#555</color>
+    <color name="nodeTextColor">#00bcb4</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/track_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/track_receive"
+            android:text="收件"
+            style="@style/MyRadioButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/track_send"
+            android:text="寄件"
+            style="@style/MyRadioButton"/>
+
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_main"></FrameLayout>
+
+</LinearLayout>

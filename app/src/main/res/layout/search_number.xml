@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/number_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/back">
+
+
+            <EditText
+                android:id="@+id/number_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="请输入要搜索的订单号"
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="#000"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:textColorHint="@color/grayDeepDark"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="8dp"
+                android:drawableRight="@drawable/search"
+                android:paddingRight="15dp"
+                android:background="@drawable/base_btn_01_normal"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLogin"/>
+
+
+
+
+        <com.logistical.fd.widget.view.MyRecyclerView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+
+    <include layout="@layout/empty_show_msg"
+             android:id="@+id/msg_empty"/>
+
+
+</LinearLayout>

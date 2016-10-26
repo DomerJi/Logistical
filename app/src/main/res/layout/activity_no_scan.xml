@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/widget_margin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/no_scan_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入快递单号"
+                android:digits="@string/digit"
+                android:maxLength="20"
+                android:padding="@dimen/widget_margin" />
+
+            <TextView
+                android:id="@+id/no_scan_ordersn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widget_margin"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/clear"/>
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/no_scan_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_selector"
+            android:text="添加"
+            android:gravity="center"
+            android:padding="@dimen/widget_margin"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_defaut"
+        android:layout_marginLeft="@dimen/widget_margin"
+        android:layout_marginRight="@dimen/widget_margin"
+        android:background="@color/colorLogin"
+        />
+
+
+    <TextView
+        android:id="@+id/noscan_sd_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/sd_luru_msg_show"
+        android:gravity="center"
+        android:textColor="@color/grayDeep" />
+
+
+
+
+
+
+</LinearLayout>

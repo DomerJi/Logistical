@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"
+            android:layout_marginTop="@dimen/margin_order_deatil"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/y_ordersn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="请输入快递单号"
+                android:background="@null"
+                android:digits="@string/digit"
+                android:maxLength="20"
+                android:paddingLeft="@dimen/widget_margin"
+                android:textSize="@dimen/font_size_18sp"
+                android:textColor="@color/colorLogin"/>
+
+            <TextView
+                android:id="@+id/y_company"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="选择快递公司"
+                android:gravity="right"
+                android:textSize="@dimen/font_size_18sp"
+                android:padding="@dimen/widget_margin" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"/>
+
+        <CheckedTextView
+            android:background="@color/white"
+            android:id="@+id/y_select_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin"
+            android:text="选择疑难类型"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_18sp"
+            android:checkMark="@drawable/pull_down_difficult"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"
+            android:layout_marginTop="@dimen/margin_order_deatil"/>
+
+        <EditText
+            android:id="@+id/y_deoptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:background="@color/white"
+            android:hint="疑难说明"
+            android:gravity="start"
+            android:padding="@dimen/widget_margin"
+            android:textSize="@dimen/font_size_18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark" />
+
+
+        <com.logistical.fd.utils.image.NoScrollGridView1
+            android:id="@+id/post_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:verticalSpacing="5dp">
+        </com.logistical.fd.utils.image.NoScrollGridView1>
+
+    </LinearLayout>
+
+</ScrollView>

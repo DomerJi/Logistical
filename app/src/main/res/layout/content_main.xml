@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="fd.logistical.com.slidmenu.MainActivity"
+              tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:id="@+id/home_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/base_btn_02_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/site_home"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前站点"
+                android:textColor="@color/colorLogin"
+                android:textSize="@dimen/font_size_20sp"
+                />
+
+
+            <TextView
+                android:id="@+id/home_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/widget_margin"
+                android:text="北京总站"
+                android:textSize="@dimen/font_size_18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/base_btn_02_selector"
+        android:drawableLeft="@drawable/collect_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="录入收件信息"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_defaut"
+        android:background="@color/grayDark"/>
+
+    <TextView
+        android:id="@+id/home_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_btn_02_selector"
+        android:drawableLeft="@drawable/send_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="录入寄件信息"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_defaut"
+        android:background="@color/grayDark"/>
+
+    <TextView
+        android:id="@+id/home_difficult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_btn_02_selector"
+        android:drawableLeft="@drawable/difficult_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="疑难件处理"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20sp"/>
+
+    <TextView
+        android:id="@+id/home_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/base_btn_02_selector"
+        android:drawableLeft="@drawable/client_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="客户取件"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_defaut"
+        android:background="@color/grayDark"/>
+
+    <TextView
+        android:id="@+id/home_track"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_btn_02_selector"
+        android:drawableLeft="@drawable/track_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="快递跟踪"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_20sp"/>
+
+</LinearLayout>

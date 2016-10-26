@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:id="@+id/id_tool_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="toolBar"
+            android:background="@drawable/base_btn_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toobBarTitleSize"
+            android:layout_marginRight="?attr/actionBarSize"
+            />
+
+        <TextView
+            android:id="@+id/id_right"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/base_btn_selector"
+            android:gravity="center"
+            android:textSize="@dimen/toobBarRightTitleSize"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/id_right_img"
+            android:visibility="gone"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:background="@drawable/base_btn_selector"
+            android:gravity="center"
+            android:textSize="@dimen/toobBarRightTitleSize"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
